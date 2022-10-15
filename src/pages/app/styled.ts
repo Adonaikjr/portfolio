@@ -2,6 +2,23 @@ import styled from "styled-components";
 
 export const ContainerApp = styled.main`
 width: 100%;
+a{
+    position: absolute;
+}
+.propOne{
+    bottom: -300px;
+    left: 50px;
+}
+.propTwo{
+    right: 5vh;
+    bottom: -300px;
+}
+
+.propTree{
+    bottom:-300px;
+    left: 55vh;
+
+}
 `;
 
 export const Section = styled.section`

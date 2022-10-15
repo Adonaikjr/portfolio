@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerApp = styled.main`
 width: 100%;
-a{
+/* a{
     position: absolute;
 }
 .propOne{
@@ -16,9 +16,9 @@ a{
 
 .propTree{
     bottom:-300px;
-    left: 55vh;
+    left: 51vh;
 
-}
+} */
 `;
 
 export const Section = styled.section`

@@ -11,9 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         outline: 0;
         box-shadow:0 0 0 2px ${({ theme }) => theme.base_border}
     }
-
     
-
     body{
         margin: 0 auto;
         background: ${({ theme }) => theme.base_background};

@@ -6,18 +6,20 @@ export const ContainerContact = styled.main`
   justify-content: center;
   height: 100%;
   form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+    width: 100%;
+    legend {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
     fieldset {
       padding: 1rem;
       border: none;
-      width: 40rem;
       display: flex;
       gap: 0.5rem;
       flex-direction: column;
       input {
+        width: 100%;
         height: 3rem;
         border-radius: 5px;
       }

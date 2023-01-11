@@ -1,15 +1,30 @@
-import { ContainerCard } from "./styled";
+import { ContainerCard } from './styled'
 
-interface types_props{
-    title:string;
-    text:string;
+interface typePropsCard {
+  img: string
+  imgAlt: string
+  title: string
+  description: string
+  tags: string
+  urlProject: string
 }
 
-export function Cards( { title, text }: types_props ){
-    return(
-        <ContainerCard> 
-            <h3>{title}</h3>
-            <p>{text}</p>
-        </ContainerCard>
-    )
+export function Card({
+  img,
+  imgAlt,
+  title,
+  description,
+  tags,
+  urlProject,
+}: typePropsCard) {
+  return (
+    <ContainerCard>
+      <h3>{title}</h3>
+      <a href={`https://${urlProject}`} target="_blank" rel="noreferrer">
+        <img src={img} alt={imgAlt} />
+      </a>
+      <p>{description}</p>
+      <span>{tags}</span>
+    </ContainerCard>
+  )
 }

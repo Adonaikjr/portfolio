@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -9,15 +9,19 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus{
         outline: 0;
-        box-shadow:0 0 0 2px ${({theme}) => theme["base_border"]}
+        box-shadow:0 0 0 2px ${({ theme }) => theme.base_border}
     }
+
+    
 
     body{
-        background: ${({theme}) => theme["base_background"]};
-        color: ${({theme}) => theme["base_text"]};
+        margin: 0 auto;
+        background: ${({ theme }) => theme.base_background};
+        color: ${({ theme }) => theme.base_text};
+        max-width: 1440px;
+        font-family: ${(props) => props.theme.font};
+        a{
+        text-decoration: none;
     }
-    body, input, textarea, button{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     }
 `

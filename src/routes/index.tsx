@@ -1,13 +1,16 @@
 import { Route, Routes } from 'react-router-dom'
-import { Header } from '../components/Header'
 import { LayoutDefault } from '../components/layout/Default'
 import { App } from '../pages/app/App'
+import { Contact } from '../pages/Contact'
+import { Project } from '../pages/Project'
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path='/' element={ <LayoutDefault/> }>
+      <Route path="/" element={<LayoutDefault />}>
         <Route path="/" element={<App />} />
-        </Route>
+        <Route path="/projetos" element={<Project />} />
+        <Route path="/contato" element={<Contact />} />
+      </Route>
     </Routes>
   )
 }

@@ -1,14 +1,20 @@
-import { ContainerHeader, Rotate } from "./styled";
+import { ContainerHeader, Rotate, NavigateBack, Nav } from './styled'
 import componentlogo from '../../assets/react.svg'
-import { Outlet } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
-export function Header(){
-    return(
+export function Header() {
+  return (
     <ContainerHeader>
+      <NavigateBack to="/">
         <Rotate>
-        <img src={ componentlogo } height={50} alt="logo"/>
+          <img src={componentlogo} height={50} alt="logo" />
         </Rotate>
-        <h1>TipTech</h1>
+      </NavigateBack>
+      <Nav>
+        <Link to="/projetos">Projetos</Link>
+        <Link to="/Contato">Contato</Link>
+        <Link to="/stecks">Stecks</Link>
+      </Nav>
     </ContainerHeader>
-    )
+  )
 }

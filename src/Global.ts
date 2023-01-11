@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: ${(props) => props.theme.font};
         a{
         text-decoration: none;
-    }
+        color: ${({ theme }) => theme.base_text};
+        }
     }
 `

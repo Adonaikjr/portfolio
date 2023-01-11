@@ -13,7 +13,7 @@ export function Header() {
       <Nav>
         <Link to="/projetos">Projetos</Link>
         <Link to="/Contato">Contato</Link>
-        <Link to="/stecks">Stecks</Link>
+        <Link to="/stacks">Stacks</Link>
       </Nav>
     </ContainerHeader>
   )

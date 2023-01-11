@@ -3,6 +3,7 @@ import { LayoutDefault } from '../components/layout/Default'
 import { App } from '../pages/app/App'
 import { Contact } from '../pages/Contact'
 import { Project } from '../pages/Project'
+import { Stacks } from '../pages/Stacks'
 export function AppRoutes() {
   return (
     <Routes>
@@ -11,6 +12,7 @@ export function AppRoutes() {
         <Route path="/projetos" element={<Project />} />
         <Route path="/contato" element={<Contact />} />
       </Route>
+      <Route path="/stacks" element={<Stacks />} />
     </Routes>
   )
 }

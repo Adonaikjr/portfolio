@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Button } from '../../components/Button'
 import { ContainerContact } from './style'
-
 import emailjs from '@emailjs/browser'
-
+import { toast } from 'react-toastify'
+import { Input } from '../../components/Input'
 export function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -27,8 +27,7 @@ export function Contact() {
         templateParams,
         '9WgsQTY5qzUEjns5Z',
       )
-      alert('Enviado com sucesso!')
-      alert('Obrigado pelo contato 👋')
+      toast.success('Obrigado pelo contato 👋')
       setName('')
       setEmail('')
       setMessege('')
@@ -45,19 +44,19 @@ export function Contact() {
         <legend>Contato</legend>
         <fieldset>
           <label>Nome:</label>
-          <input
+          <Input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <label>Email:</label>
-          <input
+          <Input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <label>Telefone:</label>
-          <input
+          <Input
             type="text"
             value={tell}
             onChange={(e) => setTell(e.target.value)}

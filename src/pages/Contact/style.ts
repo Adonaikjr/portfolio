@@ -6,7 +6,7 @@ export const ContainerContact = styled.main`
   justify-content: center;
   height: 100%;
   form {
-    width: 100%;
+    width: 80%;
     legend {
       width: 100%;
       text-align: center;
@@ -24,8 +24,14 @@ export const ContainerContact = styled.main`
         border-radius: 5px;
       }
       textarea {
-        height: 8rem;
-        border-radius: 5px;
+        height: 9rem;
+        width: 100%;
+        border-radius: 8px;
+        background-color: ${(props) => props.theme.base_input};
+        border: solid 1px ${(props) => props.theme.base_border};
+        color: ${(props) => props.theme.base_subtitle};
+        padding: 0.5rem;
+        font-size: 18px;
       }
     }
   }

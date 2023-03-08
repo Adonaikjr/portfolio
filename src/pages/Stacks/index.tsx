@@ -1,14 +1,17 @@
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export function Stacks() {
+  const navigate = useNavigate()
+  const handleBack = () => {
+    navigate(-1)
+  }
   return (
     <>
       <h1>Pagina em construção...</h1>
       <p>Te aguardo em breve...</p>
       <br />
-      <Link to="/">Voltar para início</Link>
+      <button onClick={handleBack}>Voltar</button>
       <br />
-      <Link to="/contato">Ir para Contato</Link>
     </>
   )
 }

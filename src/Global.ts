@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
         background: ${({ theme }) => theme.base_background};
         color: ${({ theme }) => theme.base_text};
-        max-width: 1440px;
+        width: 100%;
         font-family: ${(props) => props.theme.font};
         height: 100vh;
         a{

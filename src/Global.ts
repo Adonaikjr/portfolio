@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.base_text};
         max-width: 1440px;
         font-family: ${(props) => props.theme.font};
+        height: 100vh;
         a{
         text-decoration: none;
         color: ${({ theme }) => theme.base_text};

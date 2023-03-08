@@ -7,7 +7,7 @@ export const ContainerFooter = styled.footer`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 3rem;
+  height: 5rem;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -1,17 +1,16 @@
 import styled from 'styled-components'
 
 export const ContainerCard = styled.div`
-  border: solid;
-  width: 100%;
+  border: solid 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   transition: 1s;
-  width: 31rem;
   padding: 1rem;
   border-radius: 18px;
+  width: 20rem;
   a {
     border: solid none;
   }
@@ -22,29 +21,12 @@ export const ContainerCard = styled.div`
   }
   img {
     border-radius: 5px;
-    height: 15rem;
-    width: 25rem;
-    transition: 1s;
+    height: 90%;
+    width: 95%;
+    transition: 0.5s;
     :hover {
-      transition: 1s;
-      width: 29rem;
-      height: 17rem;
-      @media (max-width: 513px) {
-        :hover {
-          transition: 1s;
-          width: 13rem;
-          height: 8rem;
-        }
-      }
-    }
-  }
-  @media (max-width: 513px) {
-    width: 15rem;
-    transition: 1s;
-    img {
-      transition: 1s;
-      width: 12.5rem;
-      height: 7.5rem;
+      width: 100%;
+      height: 100%;
     }
   }
 `

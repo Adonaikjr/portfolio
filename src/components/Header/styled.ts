@@ -8,7 +8,6 @@ export const ContainerHeader = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -27,13 +26,10 @@ export const NavigateBack = styled(Link)``
 
 export const Nav = styled.nav`
   width: 40rem;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
   a {
-    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;

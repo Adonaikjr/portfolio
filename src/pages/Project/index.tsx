@@ -7,9 +7,19 @@ import projectFor from '../../assets/project4.png'
 import projectFive from '../../assets/project5.png'
 import projectSix from '../../assets/project6.png'
 import projectSeven from '../../assets/project7.png'
+import projectEight from '../../assets/project8.png'
+
 export function Project() {
   return (
     <ContainerProject>
+      <Card
+        title="Projeto de anotações"
+        img={projectEight}
+        imgAlt="adonaikjr"
+        description="Notas | finalizado"
+        tags="ReactJs, NodeJs"
+        urlProject="notes-adonaikjr.netlify.app/"
+      />
       <Card
         title="Site de simples."
         img={projectSeven}
@@ -66,8 +76,6 @@ export function Project() {
         imgAlt="projeto um"
         urlProject="descontosflesh.netlify.app"
       />
-     
-    
     </ContainerProject>
   )
 }

@@ -1,9 +1,10 @@
 import { ContainerButton } from './styled'
 
 interface typeButtonProps {
-  title: any
+  title: string
+  onClick: any
 }
 
-export function Button({ title, ...rest }: typeButtonProps) {
-  return <ContainerButton {...rest}>{title}</ContainerButton>
+export function Button({ title, onClick, ...rest }: typeButtonProps) {
+  return <ContainerButton onClick={onClick}>{title}</ContainerButton>
 }

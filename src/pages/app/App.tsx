@@ -1,15 +1,15 @@
 import { ContainerApp } from './styled'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/all'
+import Balance from 'react-wrap-balancer'
 
 export function App() {
   return (
     <ContainerApp>
-      <article>
-        <img src="https://github.com/adonaikjr.png" alt="Adonaikjr" />
-      </article>
       <section>
-        <h1>Hello World 👋</h1>
-        <h1>Sou Adonai Junior, Desenvolvedor Front-end.</h1>
+        <h1>
+          <Balance>Hello World 👋</Balance>
+        </h1>
+        <h2>Sou Adonai Junior, Desenvolvedor Front-end.</h2>
         <p>
           Tenho experiência de 2 anos em desenvolvimento web e mobile, tenho
           conhecimentos em React, React-Native, Typescript, Node-Js, Javascript,

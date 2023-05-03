@@ -11,7 +11,7 @@ export function Header() {
         </Rotate>
       </NavigateBack>
       <Nav>
-        <Link to="/projetos">Projetos</Link>
+        <Link to="/">Projetos</Link>
         <Link to="/Contato">Contato</Link>
         <Link to="/stacks">Stacks</Link>
       </Nav>

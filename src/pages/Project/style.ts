@@ -8,6 +8,7 @@ export const ContainerProject = styled.main`
   flex-wrap: wrap;
   gap: 1rem;
   overflow: auto;
+  transition: 1s;
   ::-webkit-scrollbar {
     width: 6px;
     transition: 1s;

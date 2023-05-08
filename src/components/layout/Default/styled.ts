@@ -6,6 +6,7 @@ export const ContainerLayoutDefault = styled.div`
   justify-content: space-between;
   transition: 1s;
   #hero {
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;

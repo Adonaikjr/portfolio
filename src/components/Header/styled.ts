@@ -8,13 +8,10 @@ export const ContainerHeader = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem 2rem;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   a {
@@ -25,7 +22,6 @@ export const ContainerHeader = styled.header`
 export const NavigateBack = styled(Link)``
 
 export const Nav = styled.nav`
-  width: 40rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

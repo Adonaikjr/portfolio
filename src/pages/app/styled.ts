@@ -6,7 +6,7 @@ export const ContainerApp = styled.main`
   height: 75vh;
   justify-content: center;
   flex-wrap: wrap;
-
+z-index: 99;
   section {
     width: 60rem;
     display: flex;
